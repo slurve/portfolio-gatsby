@@ -28,8 +28,8 @@ export const GlobalStyle = createGlobalStyle`
           left: -14%;
           background-image: linear-gradient(
             to bottom left,
-            rgba(#ccc, 0.4),
-            rgba(#fff, 0.2)
+            rgba(204, 204, 204, 0.3),
+            rgba(255, 255, 255, 0.2)
           );
           transform: rotate(-18deg);
         }
@@ -149,17 +149,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .list {
-    max-width: 80%;
     margin: 0 0 1.5rem;
     padding: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 
+    @media ${device.large} {
+      max-width: 80%;
+    }
+
     li {
       margin: 0 10px 10px 0;
       list-style-type: none;
-      background-color: #ddd;
+      background-color: #eee;
       font-size: 0.8rem;
       font-weight: 700;
       color: ${variable.colorLightGray};

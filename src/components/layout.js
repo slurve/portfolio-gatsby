@@ -57,8 +57,9 @@ const Container = styled.div`
   }
 `
 
-const SplitSide = () => {
-  return <Sidebar />
+const SplitSide = ({ slug }) => {
+  const isContact = slug === "contact" ? true : false
+  return <Sidebar version={isContact ? "contact" : "default"} />
 }
 
 const Content = ({ children }) => {
@@ -76,7 +77,7 @@ const Layout = ({ type, slug, children }) => {
           <Container>
             <div className={isSplit ? `split` : `wide`}>
               <Content children={children} />
-              {isSplit && <SplitSide />}
+              {isSplit && <SplitSide slug={slug} />}
             </div>
           </Container>
         </Main>

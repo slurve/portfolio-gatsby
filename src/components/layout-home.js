@@ -55,8 +55,11 @@ const Wrap = styled.div`
     }
 
     @media ${device.landscape} {
-      height: 90vh;
-      top: -10%;
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
     }
   }
 

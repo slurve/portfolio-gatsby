@@ -1,12 +1,22 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../base/device"
 import { variable } from "../base/variables"
 import ubahn from "../images/ubahn.jpg"
+import Social from "../components/social"
 
 const SidebarWrap = styled.aside`
+  position: relative;
+`
+
+const SidebarCTA = styled.div`
   color: ${variable.colorGray};
   position: sticky;
   top: 2rem;
+
+  @media ${device.large} {
+    margin-top: 12rem;
+  }
 
   .availability {
     font-size: 0.95rem;
@@ -44,12 +54,37 @@ const SidebarWrap = styled.aside`
     margin: 0 0 1.6rem;
     max-width: 280px;
   }
+
+  .social-vertical a {
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
 `
 
-const Sidebar = () => {
-  return (
-    <SidebarWrap>
-      <div className="cta" role="complementary">
+const Sidebar = ({ version }) => {
+  let sidebarContent
+  if (version === "contact") {
+    sidebarContent = (
+      <>
+        <h2>Let's connect</h2>
+        <p>
+          If filling out contact forms isn't your thing, please feel free to
+          send me an email at{" "}
+          <strong>
+            <a href="mailto:tom@slurve.com">tom@slurve.com</a>
+          </strong>
+          . You can also find me on the web:
+        </p>
+        <div className="social-vertical">
+          <Social />
+        </div>
+      </>
+    )
+  } else {
+    sidebarContent = (
+      <>
         <img src={ubahn} alt="Tom Rose" />
         <h2>Availability</h2>
         <p className="availability">
@@ -63,16 +98,12 @@ const Sidebar = () => {
         <a href="/contact" className="button">
           Contact
         </a>
-        {/* <h2>Let's connect</h2>
-        <p>
-          If filling out contact forms isn't your thing, please feel free to send me an email at
-          <strong><a href="mailto:tom@slurve.com">tom@slurve.com</a></strong
-          >. You can also find me on the web:
-        </p>
-        <div className="cta-social">
-          social
-        </div> */}
-      </div>
+      </>
+    )
+  }
+  return (
+    <SidebarWrap>
+      <SidebarCTA>{sidebarContent}</SidebarCTA>
     </SidebarWrap>
   )
 }

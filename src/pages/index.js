@@ -1,7 +1,4 @@
 import React from "react"
-// import styled from "styled-components"
-// import { device } from "../base/device"
-// import { variable } from "../base/variables"
 import LayoutHome from "../components/layout-home"
 import SEO from "../components/seo"
 
