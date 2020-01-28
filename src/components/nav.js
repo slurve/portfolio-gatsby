@@ -33,6 +33,7 @@ const NavWrap = styled.nav`
     .home &.nav-home,
     .projects &.nav-projects,
     .about &.nav-about,
+    .blog &.nav-blog,
     .contact &.nav-contact {
       border-bottom: 2px solid;
       color: ${variable.colorPrimary};

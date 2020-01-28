@@ -15,7 +15,7 @@ export const queryProjects = graphql`
         content(format: RENDERED)
         title
       }
-      projects {
+      projects(where: { orderby: { field: MENU_ORDER, order: ASC } }) {
         edges {
           node {
             title

@@ -58,8 +58,7 @@ const Container = styled.div`
 `
 
 const SplitSide = ({ slug }) => {
-  const isContact = slug === "contact" ? true : false
-  return <Sidebar version={isContact ? "contact" : "default"} />
+  return <Sidebar version={slug} />
 }
 
 const Content = ({ children }) => {

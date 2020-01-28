@@ -132,12 +132,18 @@ const contactPage = ({ data }) => {
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
           <p className="error-message">
             Uh oh. Please fill in the fields below.
           </p>
           <fieldset>
             <legend>Contact form fields</legend>
+            <p hidden>
+              <label>
+                Don't fill this out: <input name="b" />
+              </label>
+            </p>
             <p>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -158,6 +164,7 @@ const contactPage = ({ data }) => {
               <label htmlFor="description">Brief description of project</label>
               <textarea name="description" id="description"></textarea>
             </p>
+            <input type="hidden" name="form-name" value="contact" />
             <input
               type="submit"
               value="Submit"
