@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-tomrose-dev`,
+        name: `Tom Rose`,
         short_name: `tomrose`,
         start_url: `/`,
         background_color: `#fff`,
