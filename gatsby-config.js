@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Tom Rose`,
-    description: `Portfolio website for Tom Rose.`,
+    title: `Tom Rose, Philadelphia WordPress Developer`,
+    description: `Tom Rose is a Philadelphia-based freelance WordPress developer with over 20 years experience building websites with HTML, CSS and JavaScript.`,
     author: `@slurve`,
   },
   plugins: [
@@ -49,8 +49,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

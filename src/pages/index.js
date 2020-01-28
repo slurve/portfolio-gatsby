@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
   const homeTagline = data.wp.pageBy.homeCustomFields.homeTagline
   return (
     <LayoutHome slug="home">
-      <SEO title={homeLead} />
+      <SEO title="Home" />
       <h1>{homeLead}</h1>
       <h2 dangerouslySetInnerHTML={{ __html: homeTagline }} />
     </LayoutHome>
