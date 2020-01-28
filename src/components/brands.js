@@ -32,18 +32,23 @@ const BrandsWrap = styled.div`
   svg {
     width: 90px;
   }
+
   .logo-ted {
     width: 70px;
   }
+
   .logo-mlb {
     width: 100px;
   }
+
   .logo-technically {
     width: 110px;
   }
+
   .logo-wharton {
     width: 100px;
   }
+
   .logo-samsung {
     width: 60px;
   }
