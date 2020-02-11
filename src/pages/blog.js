@@ -31,7 +31,7 @@ const Blog = ({ data }) => {
   const blogPosts = data.wp.posts.edges
   return (
     <Layout type="split" slug="blog">
-      <SEO title={blogTitle} />
+      <SEO title="Blog" />
       <h1>{blogTitle}</h1>
       <LeadText>
         <div dangerouslySetInnerHTML={{ __html: blogLead }} />
