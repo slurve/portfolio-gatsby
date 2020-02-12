@@ -101,7 +101,7 @@ const Sidebar = ({ version }) => {
           <br />
           March: <span className="limited">Limited</span>
           <br />
-          April: <span className="available">Limited</span>
+          April: <span className="available">Available</span>
           <br />
         </p>
         <p>I'd love to set up a time to hear about your project. Let's talk!</p>
