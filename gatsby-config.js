@@ -3,6 +3,7 @@ module.exports = {
     title: `Tom Rose, Philadelphia WordPress Developer`,
     description: `Tom Rose is a Philadelphia-based freelance WordPress developer with over 20 years experience building websites with HTML, CSS and JavaScript.`,
     author: `@slurve`,
+    siteUrl: `https://tomrose.dev`,
   },
   plugins: [
     {
@@ -50,5 +51,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }
