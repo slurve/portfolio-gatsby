@@ -49,9 +49,6 @@ const Nav = () => (
     <Link to="/about" className="nav-about">
       About
     </Link>
-    <Link to="/blog" className="nav-blog">
-      Blog
-    </Link>
     <Link to="/contact" className="nav-contact">
       Contact
     </Link>
