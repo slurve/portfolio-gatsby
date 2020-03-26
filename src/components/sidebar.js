@@ -26,6 +26,10 @@ const SidebarCTA = styled.div`
       color: ${variable.colorAvailable};
     }
 
+    .unavailable {
+      color: ${variable.colorUnavailable};
+    }
+
     .limited {
       color: ${variable.colorLimited};
     }
@@ -97,11 +101,13 @@ const Sidebar = ({ version }) => {
         <img src={ubahn} alt="Tom Rose" />
         <h2>Availability</h2>
         <p className="availability">
-          March: <span className="limited">Limited</span>
+          April: <span className="unavailable">Unavailable</span>
           <br />
-          April: <span className="limited">Limited</span>
+          May: <span className="limited">Limited</span>
           <br />
-          May: <span className="available">Available</span>
+          June: <span className="available">Available</span>
+          <br />
+          July: <span className="available">Available</span>
           <br />
         </p>
         <p>I'd love to set up a time to hear about your project. Let's talk!</p>

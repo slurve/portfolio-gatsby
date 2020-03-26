@@ -16,4 +16,5 @@ export const variable = {
   colorLinkedin: `#0077b5;`,
   colorLimited: `rgb(219, 144, 4);`,
   colorAvailable: `rgb(9, 151, 9);`,
+  colorUnavailable: `#ff2d00;`,
 }
