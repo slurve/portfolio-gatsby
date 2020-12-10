@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { device } from "../base/device"
 import { variable } from "../base/variables"
 import ubahn from "../images/ubahn.jpg"
-import Social from "../components/social"
+import Social from "./social"
 
 const SidebarWrap = styled.aside`
   position: relative;
@@ -101,11 +101,11 @@ const Sidebar = ({ version }) => {
         <img src={ubahn} alt="Tom Rose" />
         <h2>Availability</h2>
         <p className="availability">
-          <span className="limited">NOVEMBER: Limited</span>
+          <span className="unavailable">DECEMBER: Unavailable</span>
           <br />
-          <span className="available">DECEMBER: Available</span>
+          <span className="limited">JANUARY: Limited</span>
           <br />
-          <span className="available">JANUARY: Available</span>
+          <span className="available">FEBRUARY: Available</span>
           <br />
         </p>
         <p>I'd love to set up a time to hear about your project. Let's talk!</p>
