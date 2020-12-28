@@ -107,6 +107,8 @@ const Sidebar = ({ version }) => {
           <br />
           <span className="available">MARCH: Available</span>
           <br />
+          <span className="available">APRIL: Available</span>
+          <br />
         </p>
         <p>I'd love to set up a time to hear about your project. Let's talk!</p>
         <a href="/contact" className="button">
