@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled, { keyframes } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LeadText from "../components/lead-text"
 import Brands from "../components/brands"
-import styled, { keyframes } from "styled-components"
 import { device } from "../base/device"
 import { variable } from "../base/variables"
 
@@ -19,14 +19,16 @@ export const queryProjects = graphql`
         edges {
           node {
             title
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
             projectCustom {
               projectSummary
               projectUrl
             }
             slug
-            featuredImage {
-              sourceUrl
-            }
           }
         }
       }
@@ -178,9 +180,9 @@ const projectsPage = ({ data }) => {
       {projects.map(project => {
         const projectTitle = project.node.title
         const projectSlug = project.node.slug
-        const projectSummary = project.node.projectCustom.projectSummary
-        const projectUrl = project.node.projectCustom.projectUrl
-        const projectScreen = project.node.featuredImage.sourceUrl
+        const { projectSummary } = project.node.projectCustom
+        const { projectUrl } = project.node.projectCustom
+        const projectScreen = project.node.featuredImage.node.sourceUrl
         return (
           <Project key={projectSlug}>
             <div className="project-screen">
