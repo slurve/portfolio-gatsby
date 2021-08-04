@@ -103,7 +103,7 @@ const Sidebar = ({ version }) => {
         <p className="availability">
           <span className="unavailable">AUGUST: Unavailable</span>
           <br />
-          <span className="limited">SEPTEMBER+: Limited</span>
+          <span className="limited">SEPTEMBER: Limited</span>
           <br />
           <span className="available">OCTOBER+: Available</span>
           <br />
