@@ -101,11 +101,7 @@ const Sidebar = ({ version }) => {
         <img src={ubahn} alt="Tom Rose" />
         <h2>Availability</h2>
         <p className="availability">
-          <span className="available">JUNE: Available</span>
-          <br />
-          <span className="limited">JULY: Limited</span>
-          <br />
-          <span className="limited">AUGUST: Limited</span>
+          <span className="unavailable">AUGUST: Unavailable</span>
           <br />
           <span className="available">SEPTEMBER+: Available</span>
         </p>
