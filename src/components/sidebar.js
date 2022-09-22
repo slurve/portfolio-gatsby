@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { device } from "../base/device"
 import { variable } from "../base/variables"
 import ubahn from "../images/ubahn.jpg"
+import Availability from "./avail"
 import Social from "./social"
 
 const SidebarWrap = styled.aside`
@@ -16,23 +17,6 @@ const SidebarCTA = styled.div`
 
   @media ${device.large} {
     margin-top: 12rem;
-  }
-
-  .availability {
-    font-size: 0.95rem;
-    font-weight: 700;
-
-    .available {
-      color: ${variable.colorAvailable};
-    }
-
-    .unavailable {
-      color: ${variable.colorUnavailable};
-    }
-
-    .limited {
-      color: ${variable.colorLimited};
-    }
   }
 
   img {
@@ -59,11 +43,15 @@ const SidebarCTA = styled.div`
     max-width: 280px;
   }
 
-  .social-vertical a {
-    align-items: center;
-    display: flex;
-    font-weight: 700;
-    margin-bottom: 20px;
+  .social-vertical {
+    margin-bottom: 40px;
+
+    a {
+      align-items: center;
+      display: flex;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
   }
 `
 
@@ -84,6 +72,7 @@ const Sidebar = ({ version }) => {
         <div className="social-vertical">
           <Social />
         </div>
+        <Availability />
       </>
     )
   } else if (version === "blog") {
@@ -99,19 +88,7 @@ const Sidebar = ({ version }) => {
     sidebarContent = (
       <>
         <img src={ubahn} alt="Tom Rose" />
-        <h2>Availability</h2>
-        <p className="availability">
-          <span className="limited">SEPTEMBER: Limited</span>
-          <br />
-          <span className="available">OCTOBER: Available</span>
-          <br />
-          <span className="available">NOVEMBER: Available</span>
-          <br />
-          <span className="limited">DECEMBER: Limited</span>
-          <br />
-          <span className="available">JANUARY+: Available</span>
-          <br />
-        </p>
+        <Availability />
         <p>I'd love to set up a time to hear about your project. Let's talk!</p>
         <a href="/contact" className="button">
           Contact
