@@ -7,7 +7,8 @@ export const query = graphql`
   {
     wp {
       pageBy(uri: "home") {
-        homeCustomFields {
+        home {
+          availability
           homeLead
           homeTagline
         }
@@ -16,8 +17,8 @@ export const query = graphql`
   }
 `
 const IndexPage = ({ data }) => {
-  const homeLead = data.wp.pageBy.homeCustomFields.homeLead
-  const homeTagline = data.wp.pageBy.homeCustomFields.homeTagline
+  const homeLead = data.wp.pageBy.home.homeLead
+  const homeTagline = data.wp.pageBy.home.homeTagline
   return (
     <LayoutHome slug="home">
       <SEO title="Home" />

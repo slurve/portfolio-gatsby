@@ -33,6 +33,7 @@ const NavWrap = styled.nav`
     .home &.nav-home,
     .projects &.nav-projects,
     .about &.nav-about,
+    .blog &.nav-blog,
     .contact &.nav-contact {
       border-bottom: 2px solid;
       color: ${variable.colorPrimary};
@@ -45,6 +46,9 @@ const Nav = () => (
     <Link to="/projects" className="nav-projects">
       Projects
     </Link>
+    {/* <Link to="/blog" className="nav-blog">
+      Blog
+    </Link> */}
     <Link to="/about" className="nav-about">
       About
     </Link>

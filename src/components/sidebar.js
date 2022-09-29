@@ -44,13 +44,17 @@ const SidebarCTA = styled.div`
   }
 
   .social-vertical {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     a {
       align-items: center;
       display: flex;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 `
