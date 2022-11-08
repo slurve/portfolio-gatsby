@@ -4,6 +4,7 @@ import { device } from "../base/device"
 import { variable } from "../base/variables"
 import ubahn from "../images/ubahn.jpg"
 import Social from "./social"
+import Availability from "./avail"
 
 const SidebarWrap = styled.aside`
   position: relative;
@@ -16,23 +17,6 @@ const SidebarCTA = styled.div`
 
   @media ${device.large} {
     margin-top: 12rem;
-  }
-
-  .availability {
-    font-size: 0.95rem;
-    font-weight: 700;
-
-    .available {
-      color: ${variable.colorAvailable};
-    }
-
-    .unavailable {
-      color: ${variable.colorUnavailable};
-    }
-
-    .limited {
-      color: ${variable.colorLimited};
-    }
   }
 
   img {
@@ -57,6 +41,10 @@ const SidebarCTA = styled.div`
     line-height: 1.6rem;
     margin: 0 0 1.6rem;
     max-width: 280px;
+  }
+
+  .social-vertical {
+    margin-bottom: 30px;
   }
 
   .social-vertical a {
@@ -84,6 +72,7 @@ const Sidebar = ({ version }) => {
         <div className="social-vertical">
           <Social />
         </div>
+        <Availability />
       </>
     )
   } else if (version === "blog") {
@@ -99,19 +88,7 @@ const Sidebar = ({ version }) => {
     sidebarContent = (
       <>
         <img src={ubahn} alt="Tom Rose" />
-        <h2>Availability</h2>
-        <p className="availability">
-          <span className="limited">SEPTEMBER: Limited</span>
-          <br />
-          <span className="available">OCTOBER: Available</span>
-          <br />
-          <span className="available">NOVEMBER: Available</span>
-          <br />
-          <span className="limited">DECEMBER: Limited</span>
-          <br />
-          <span className="available">JANUARY+: Available</span>
-          <br />
-        </p>
+        <Availability />
         <p>I'd love to set up a time to hear about your project. Let's talk!</p>
         <a href="/contact" className="button">
           Contact

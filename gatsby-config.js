@@ -5,13 +5,16 @@ module.exports = {
     author: `@slurve`,
     siteUrl: `https://tomrose.dev`,
   },
+  flags: {
+    THE_FLAG: false,
+  },
   plugins: [
     {
-      resolve: "gatsby-source-graphql",
+      resolve: `gatsby-source-graphql`,
       options: {
-        typeName: "WordPress",
-        fieldName: "wp",
-        url: "https://slurved.wpengine.com/graphql",
+        typeName: `WordPress`,
+        fieldName: `wp`,
+        url: `https://slurved.wpengine.com/graphql`,
         refetchInterval: 60,
       },
     },
