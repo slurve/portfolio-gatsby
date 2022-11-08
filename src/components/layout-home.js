@@ -66,10 +66,19 @@ const Wrap = styled.div`
     background: none;
     margin-top: 0;
 
-    svg {
+    a:not(.mastodon) svg {
       fill: ${variable.colorLight};
       width: 30px;
       height: 30px;
+    }
+
+    .mastodon svg {
+      width: 30px;
+      height: 30px;
+
+      .md-fill {
+        fill: ${variable.colorLight};
+      }
     }
 
     a {

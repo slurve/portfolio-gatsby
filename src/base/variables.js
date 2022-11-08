@@ -10,6 +10,7 @@ export const variable = {
   colorLinkHover: `#444;`,
   colorShadow: `#e8e8e8;`,
   colorBorder: `#eee;`,
+  colorMastodon: `#5A5DE7`,
   colorGithub: `#181717;`,
   colorInstagram: `#e4405f;`,
   colorTwitter: `#1da1f2;`,
