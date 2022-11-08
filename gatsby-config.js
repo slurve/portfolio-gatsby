@@ -10,7 +10,7 @@ module.exports = {
       resolve: "gatsby-source-graphql",
       options: {
         typeName: "WordPress",
-        fieldName: "wp",
+        fieldName: "wordpress",
         url: "https://slurved.wpengine.com/graphql",
         refetchInterval: 60,
       },

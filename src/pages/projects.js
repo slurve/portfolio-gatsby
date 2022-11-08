@@ -10,7 +10,7 @@ import { variable } from "../base/variables"
 
 export const queryProjects = graphql`
   {
-    wp {
+    wordpress {
       pageBy(uri: "projects") {
         content(format: RENDERED)
         title
@@ -166,9 +166,9 @@ const Project = styled.div`
 `
 
 const projectsPage = ({ data }) => {
-  const projectsTitle = data.wp.pageBy.title
-  const projectsLead = data.wp.pageBy.content
-  const projects = data.wp.projects.edges
+  const projectsTitle = data.wordpress.pageBy.title
+  const projectsLead = data.wordpress.pageBy.content
+  const projects = data.wordpress.projects.edges
   return (
     <Layout slug="projects">
       <SEO title={projectsTitle} />

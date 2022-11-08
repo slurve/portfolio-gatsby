@@ -33,7 +33,7 @@ export default function Availability() {
     <StaticQuery
       query={graphql`
         query availQuery {
-          wp {
+          wordpress {
             pageBy(uri: "home") {
               home {
                 availability
@@ -48,7 +48,7 @@ export default function Availability() {
           <div
             class="availability"
             dangerouslySetInnerHTML={{
-              __html: data.wp.pageBy.home.availability,
+              __html: data.wordpress.pageBy.home.availability,
             }}
           ></div>
         </AvailabilityWrap>

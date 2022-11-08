@@ -6,7 +6,7 @@ import LeadText from "../components/lead-text"
 
 export const queryPosts = graphql`
   {
-    wp {
+    wordpress {
       pageBy(uri: "blog") {
         content(format: RENDERED)
         title
@@ -26,9 +26,9 @@ export const queryPosts = graphql`
 `
 
 const Blog = ({ data }) => {
-  const blogTitle = data.wp.pageBy.title
-  const blogLead = data.wp.pageBy.content
-  const blogPosts = data.wp.posts.edges
+  const blogTitle = data.wordpress.pageBy.title
+  const blogLead = data.wordpress.pageBy.content
+  const blogPosts = data.wordpress.posts.edges
   return (
     <Layout type="split" slug="blog">
       <SEO title="Blog" />

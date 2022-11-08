@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 export const aboutQuery = graphql`
   {
-    wp {
+    wordpress {
       pageBy(uri: "about") {
         content(format: RENDERED)
         title
@@ -16,8 +16,8 @@ export const aboutQuery = graphql`
 `
 
 const aboutPage = ({ data }) => {
-  const aboutTitle = data.wp.pageBy.title
-  const aboutContent = data.wp.pageBy.content
+  const aboutTitle = data.wordpress.pageBy.title
+  const aboutContent = data.wordpress.pageBy.content
   return (
     <Layout type="split" slug="about">
       <SEO title={aboutTitle} />
