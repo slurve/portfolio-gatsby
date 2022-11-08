@@ -79,6 +79,10 @@ const Wrap = styled.div`
       .md-fill {
         fill: ${variable.colorLight};
       }
+
+      .md-mark {
+        fill: ${variable.colorLightGray};
+      }
     }
 
     a {
