@@ -13,7 +13,7 @@ const RotatePanel = keyframes`
     transform: rotate(-2deg);
   }
   100% {
-    transform: rotate(-5deg);
+    transform: rotate(-4deg);
   }
 `
 
@@ -23,6 +23,7 @@ const Wrap = styled.div`
   height: 100vh;
   justify-content: space-between;
   margin: 0 auto;
+  max-width: 1900px;
   position: relative;
   z-index: 2;
   background-image: url(${backgroundImage});
@@ -49,7 +50,7 @@ const Wrap = styled.div`
       overflow-x: hidden;
       overflow-y: hidden;
       top: -20%;
-      transform: rotate(-5deg);
+      transform: rotate(-4deg);
       width: 150%;
     }
 

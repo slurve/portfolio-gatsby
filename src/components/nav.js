@@ -46,9 +46,6 @@ const Nav = () => (
     <Link to="/projects" className="nav-projects">
       Projects
     </Link>
-    {/* <Link to="/blog" className="nav-blog">
-      Blog
-    </Link> */}
     <Link to="/about" className="nav-about">
       About
     </Link>

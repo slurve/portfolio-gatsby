@@ -13,6 +13,7 @@ const Wrap = styled.div`
   height: 100vh;
   justify-content: space-between;
   margin: 0 auto;
+  max-width: 1900px;
   position: relative;
   z-index: 2;
 `

@@ -5,10 +5,9 @@ import SEO from "../components/seo"
 
 export const query = graphql`
   {
-    wordpress {
+    wp {
       pageBy(uri: "home") {
-        home {
-          availability
+        homeCustomFields {
           homeLead
           homeTagline
         }
@@ -17,8 +16,8 @@ export const query = graphql`
   }
 `
 const IndexPage = ({ data }) => {
-  const homeLead = data.wordpress.pageBy.home.homeLead
-  const homeTagline = data.wordpress.pageBy.home.homeTagline
+  const homeLead = data.wp.pageBy.homeCustomFields.homeLead
+  const homeTagline = data.wp.pageBy.homeCustomFields.homeTagline
   return (
     <LayoutHome slug="home">
       <SEO title="Home" />

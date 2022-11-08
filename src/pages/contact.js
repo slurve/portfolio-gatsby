@@ -9,7 +9,7 @@ import LeadText from "../components/lead-text"
 
 export const contactQuery = graphql`
   {
-    wordpress {
+    wp {
       pageBy(uri: "contact") {
         content
         title
@@ -117,8 +117,8 @@ const ContactForm = styled.div`
   }
 `
 const contactPage = ({ data }) => {
-  const contactTitle = data.wordpress.pageBy.title
-  const contactContent = data.wordpress.pageBy.content
+  const contactTitle = data.wp.pageBy.title
+  const contactContent = data.wp.pageBy.content
   return (
     <Layout type="split" slug="contact">
       <SEO title={contactTitle} />
