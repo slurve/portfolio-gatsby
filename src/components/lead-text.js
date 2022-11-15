@@ -5,6 +5,7 @@ import { device } from "../base/device"
 import { variable } from "../base/variables"
 
 const LeadTextWrap = styled.div`
+  display: none;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: ${variable.colorLightGray};

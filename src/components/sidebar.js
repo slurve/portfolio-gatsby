@@ -78,7 +78,6 @@ const Sidebar = ({ version }) => {
   } else if (version === "blog") {
     sidebarContent = (
       <>
-        <img src={ubahn} alt="Tom Rose" />
         <div className="social-vertical">
           <Social />
         </div>

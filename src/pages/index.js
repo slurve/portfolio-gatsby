@@ -15,6 +15,7 @@ export const query = graphql`
     }
   }
 `
+
 const IndexPage = ({ data }) => {
   const homeLead = data.wp.pageBy.home.homeLead
   const homeTagline = data.wp.pageBy.home.homeTagline

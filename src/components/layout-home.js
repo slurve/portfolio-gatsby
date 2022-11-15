@@ -141,7 +141,7 @@ const Wrap = styled.div`
     @media ${device.jumbo} {
       font-size: 4.4rem;
       line-height: 5rem;
-      max-width: 86%;
+      max-width: 94%;
     }
 
     @media ${device.landscape} {
@@ -161,7 +161,8 @@ const Wrap = styled.div`
 
     a {
       display: inline-block;
-      text-decoration: underline;
+      color: ${variable.colorPrimary};
+      margin-left: 6px;
 
       &:hover {
         color: ${variable.colorGray};

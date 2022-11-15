@@ -3,6 +3,7 @@ module.exports = {
     title: `Tom Rose, Philadelphia WordPress Developer`,
     description: `Tom Rose is a Philadelphia-based freelance WordPress developer with over 20 years experience building websites with HTML, CSS and JavaScript.`,
     author: `@slurve`,
+    image: `/src/images/favicon-32x32.png`,
     siteUrl: `https://tomrose.dev`,
   },
   flags: {
