@@ -141,7 +141,7 @@ const Wrap = styled.div`
     @media ${device.jumbo} {
       font-size: 4.4rem;
       line-height: 5rem;
-      max-width: 94%;
+      max-width: 98%;
     }
 
     @media ${device.landscape} {
