@@ -107,7 +107,7 @@ const Wrap = styled.div`
 
     @media ${device.jumbo} {
       align-items: center;
-      padding: 0;
+      padding: 0px;
     }
 
     a {
