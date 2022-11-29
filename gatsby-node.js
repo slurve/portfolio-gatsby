@@ -4,13 +4,14 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     query {
       wp {
-        posts {
+        posts(where: { orderby: { field: DATE, order: DESC } }) {
           edges {
             node {
               content
               title
               slug
               excerpt
+              date
             }
           }
         }
