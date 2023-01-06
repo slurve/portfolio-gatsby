@@ -47,6 +47,7 @@ export default function Availability() {
           <h2>Availability</h2>
           <div
             class="availability"
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: data.wp.pageBy.home.availability,
             }}
