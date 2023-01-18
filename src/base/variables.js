@@ -4,6 +4,7 @@ export const variable = {
   colorPrimary: `#ff2d00;`,
   colorGray: `#374140;`,
   colorLightGray: `#777;`,
+  colorLightestGray: `#ccc;`,
   colorLight: `#fff;`,
   colorDark: `#2a2c2b;`,
   colorLink: `#777;`,

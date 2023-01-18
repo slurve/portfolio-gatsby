@@ -6,7 +6,7 @@ import { device } from "../base/device"
 import { variable } from "../base/variables"
 import Masthead from "./masthead"
 import Footer from "./footer"
-import backgroundImage from "../images/building.jpg"
+// import backgroundImage from "../images/building.jpg"
 
 const RotatePanel = keyframes`
   0% {
@@ -25,10 +25,7 @@ const Wrap = styled.div`
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  background-image: url(${backgroundImage});
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: ${variable.colorGray};
   overflow-x: hidden;
 
   &::before {
@@ -67,7 +64,7 @@ const Wrap = styled.div`
     margin-top: 0;
 
     a:not(.mastodon) svg {
-      fill: ${variable.colorLight};
+      fill: ${variable.colorLightGray};
       width: 30px;
       height: 30px;
     }
@@ -77,11 +74,11 @@ const Wrap = styled.div`
       height: 30px;
 
       .md-fill {
-        fill: ${variable.colorLight};
+        fill: ${variable.colorLightGray};
       }
 
       .md-mark {
-        fill: ${variable.colorLightGray};
+        fill: ${variable.colorGray};
       }
     }
 
@@ -153,6 +150,7 @@ const Wrap = styled.div`
 
   h2 {
     color: ${variable.colorLightGray};
+    max-width: 900px;
 
     @media ${device.landscape} {
       font-size: 1.2rem;
